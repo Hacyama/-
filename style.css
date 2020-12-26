@@ -1,0 +1,51 @@
+a {
+    color:#3B60E4;
+}
+tr:nth-child(1){
+    background-color:#AFA98D;color:#ffffff;
+}
+tr:nth-child(even){
+    background-color: #7765E3;
+}
+/*自動邊界*/
+.content{
+    width:1000px;margin-left:auto;;margin-right:auto;border:1px;height:100px;
+}
+
+.head{
+    background-color:#E5E1EE;color:white;font-weight:bold;font-size:45px;
+    text-align: center;padding:0px;
+}
+/*圖片滿版
+html{
+    heigt:100%;
+}
+body{
+    background-image: url(img/85588436_p0.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+圖片滿版*/
+
+.bg {
+            position: static;
+            top: 28%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+        .bg img {
+            min-height: 100%;
+            min-width: 1000px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            img.bg {
+                left: 50%;
+                margin-left: -500px;
+            }
+        }
